@@ -1,0 +1,86 @@
+<!--Name
+email
+password
+mobile number
+address textarea
+gender
+profile pic
+city
+Education
+register
+
+redirect to login.html
+email
+password
+forget password
+
+login button
+
+redirect to task.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h1 align="center">Register</h1>
+    <form action="login.html" align="center">
+        <p>
+             <label for="name"><b>Name:</b></label>
+            <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+        </p>
+        <p>
+            <label for="email"><b>Email:</b></label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </p>
+        <p>
+            <label for="password"><b>Password:</b></label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" required>
+        </p>
+        <p>
+            <label for="number"><b>Phone Number:</b></label>
+            <input type="number" name="number" id="number" placeholder="9999999999" required>
+        </p>
+        <p>
+            <label for="address"><b>Address:</b></label>
+            <input type="textarea" name="address" id="address" required>
+        </p>
+        <p>
+            <label for="gender"><b>Gender:</b></label>
+            <input type="radio" name="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="female" value="female">
+            <label for="female">Female</label>
+        </p>
+        <p>
+            <label for="pic"><b>Profile Pic:</b></label>
+            <input type="file">
+        </p>
+        <p>
+            <label for="city"><b>City:</b></label>
+            <select name="city" id="city">
+                <option value="select">Select Your City</option>
+                <option value="hyd">Hyderabad</option>
+                <opti on value="sec">Secunderabad</option>
+                <option value="vij">Vijaywada</option>
+                <option value="kar">Karimnagar</option>
+            </select>
+        </p>
+        <p>
+            <label for="study"><b>Education:</b></label>
+            <input type="checkbox" value="10th" id="10th">
+            <label for="10th">10th</label>
+            <input type="checkbox" value="Inter" id="inter">
+            <label for="inter">Inter</label>
+            <input type="checkbox" value="Diploma" id="diploma">
+            <label for="diploma">Diploma</label>
+            <input type="checkbox" value="Btech" id="btech">
+            <label for="btech">Btech</label>
+        </p>
+        <button>Register</button>
+    </form>
+</body>
+</html>

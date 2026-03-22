@@ -20,56 +20,125 @@ redirect to task.html-->
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #77A1D3;
+            background: -webkit-linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);
+            background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);
+        }
+
+        .parent {
+            margin: 80px 580px;
+            background-color:transparent;
+            width: 400px;
+            height: 710px;
+            border-radius: 10px;
+            padding: 10px 25px;
+            box-shadow: 0px 2px 40px rgba(0,0,0,0.8);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .form-field label {
+            text-align: left;
+        }
+
+        .form-field input {
+            display: flex;
+            margin: 10px;
+            width: 90%;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .radio{
+            display: flex;
+            margin: 10px;
+            gap: 6px;
+        }
+        .pic{
+            gap: 5px;
+        }
+        .profile{
+            margin: 10px;
+        }
+        .select-city{
+            padding: 5px;
+            border-radius: 10px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+        .form-button button{
+            margin: 10px;
+            align-content: center;
+            padding: 15px;
+            border-radius: 10px;
+            width: 90%;
+            border: none;
+            background-color:lightseagreen;
+        }
+
+        
+    </style>
 </head>
+
 <body>
-    <h1 align="center">Register</h1>
-    <form action="login.html" align="center">
-        <p>
-             <label for="name"><b>Name:</b></label>
+
+    <form action="login.html" class="parent">
+        <h1>Register</h1>
+        <div class="form-field">
+            <label for="name"><b>Name:</b></label>
             <input type="text" name="name" id="name" placeholder="Enter your Name" required>
-        </p>
-        <p>
+        </div>
+        <div class="form-field">
             <label for="email"><b>Email:</b></label>
             <input type="email" name="email" id="email" placeholder="Enter your email" required>
-        </p>
-        <p>
+        </div>
+        <div class="form-field">
             <label for="password"><b>Password:</b></label>
             <input type="password" name="password" id="password" placeholder="Enter your password" required>
-        </p>
-        <p>
+        </div>
+        <div class="form-field">
             <label for="number"><b>Phone Number:</b></label>
             <input type="number" name="number" id="number" placeholder="9999999999" required>
-        </p>
-        <p>
+        </div>
+        <div class="form-field">
             <label for="address"><b>Address:</b></label>
             <input type="textarea" name="address" id="address" required>
-        </p>
-        <p>
+        </div>
+        <div class="form-radio">
             <label for="gender"><b>Gender:</b></label>
-            <input type="radio" name="male" value="male">
-            <label for="male">Male</label>
-            <input type="radio" name="female" value="female">
-            <label for="female">Female</label>
-        </p>
-        <p>
+            <div>
+                <input type="radio" name="male" value="male">
+                <label for="male">Male</label>
+            </div>
+            <div>
+                <input type="radio" name="female" value="female">
+                <label for="female">Female</label>
+            </div>
+        </div>
+        <div class="pic">
             <label for="pic"><b>Profile Pic:</b></label>
-            <input type="file">
-        </p>
-        <p>
+            <input type="file" class="profile">
+        </div>
+        <div class="city">
             <label for="city"><b>City:</b></label>
-            <select name="city" id="city">
+            <select name="city" id="city" class="select-city">
                 <option value="select">Select Your City</option>
                 <option value="hyd">Hyderabad</option>
                 <opti on value="sec">Secunderabad</option>
-                <option value="vij">Vijaywada</option>
-                <option value="kar">Karimnagar</option>
+                    <option value="vij">Vijaywada</option>
+                    <option value="kar">Karimnagar</option>
             </select>
-        </p>
-        <p>
+        </div>
+        <div>
             <label for="study"><b>Education:</b></label>
             <input type="checkbox" value="10th" id="10th">
             <label for="10th">10th</label>
@@ -79,8 +148,12 @@ redirect to task.html-->
             <label for="diploma">Diploma</label>
             <input type="checkbox" value="Btech" id="btech">
             <label for="btech">Btech</label>
-        </p>
-        <button>Register</button>
+        </div>
+        <div class="form-button">
+            <button>Register</button>
+        </div>
+
     </form>
 </body>
+
 </html>
